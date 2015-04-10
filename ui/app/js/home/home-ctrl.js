@@ -4,7 +4,6 @@ angular.module( 'home', [] ).config( function( $stateProvider ) {
     templateUrl: 'home/home.tpl',
     controller: 'HomeCtrl'
   } );
-} ).controller( 'HomeCtrl', function( $scope, HomeService ) {
-	console.log("ravi");
-
+} ).controller( 'HomeCtrl', function( $scope, HomeService,$state ) {
+$state.go("login");
 } );

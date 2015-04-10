@@ -4,15 +4,28 @@ public class User {
 
   private long id;
 
+  private String userName;
+  
   private String firstName;
 
   private String lastName;
+  
+  private String password;
 
   protected User() {}
+  
+  public User(String userName,String password){
+    this.userName = userName;
+    this.password = password;
+  }
 
-  public User(String firstName, String lastName) {
+  public User(long id, String userName, String firstName, String lastName, String password) {
+    super();
+    this.id = id;
+    this.userName = userName;
     this.firstName = firstName;
     this.lastName = lastName;
+    this.password = password;
   }
 
   public long getId() {
@@ -21,6 +34,14 @@ public class User {
 
   public void setId(long id) {
     this.id = id;
+  }
+
+  public String getUserName() {
+    return userName;
+  }
+
+  public void setUserName(String userName) {
+    this.userName = userName;
   }
 
   public String getFirstName() {
@@ -39,8 +60,20 @@ public class User {
     this.lastName = lastName;
   }
 
+  public String getPassword() {
+    return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
   @Override
   public String toString() {
-    return String.format("User[id=%d, firstName='%s', lastName='%s']", id, firstName, lastName);
+    return "User [id=" + id + ", userName=" + userName + ", firstName=" + firstName + ", lastName=" + lastName
+        + ", password=" + password + "]";
   }
+
+  
+  
 }

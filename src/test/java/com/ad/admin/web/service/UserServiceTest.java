@@ -1,7 +1,6 @@
 package com.ad.admin.web.service;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -17,7 +16,8 @@ public class UserServiceTest extends BaseTest {
 
   @Test
   public void shouldBeAbleToSaveUser() {
-    User user = new User("Karan", "Gujral");
+    User user = new User(2L,"kgujral@gmail.com","Karan", "Gujral","k-password");
+    user.setId(2L);
     user = userService.save(user);
     Assert.assertNotNull(user);
     Assert.assertNotNull(user.getId());
@@ -37,4 +37,27 @@ public class UserServiceTest extends BaseTest {
     userService.findById(2000000L);
   }
 
+  @Test
+  public void shouldBeAbleToLogingByAppropriateCredential() throws UserNotFoundException{
+    User user =new User("kgujral@gmail.com","k-password");
+    user.setId(2L);
+    User logedInUser = userService.login(user);
+    Assert.assertNotNull(user);
+    Assert.assertEquals(user.getUserName(),logedInUser.getUserName());
+    Assert.assertEquals(user.getPassword(),logedInUser.getPassword());
+  }
+
+  @Test(expected = IllegalArgumentException.class)
+  public void shouldThrowExceptionIfUserNameIsEmptyOrNullWhileLoggingIntoSystem() throws UserNotFoundException {
+    User user = new User(null,"kdr");
+    userService.login(user);
+  }
+  
+  @Test(expected = IllegalArgumentException.class)
+  public void shouldThrowExceptionIfPasswordIsEmptyOrNullWhileLoggingIntoSystem() throws UserNotFoundException {
+    User user = new User("Ajay","");
+    userService.login(user);
+  }
+  
+  
 }
