@@ -5,5 +5,6 @@ angular.module( 'home', [] ).config( function( $stateProvider ) {
     controller: 'HomeCtrl'
   } );
 } ).controller( 'HomeCtrl', function( $scope, HomeService ) {
+	console.log("homectrl");
 
 } );
