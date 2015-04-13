@@ -1,2 +1,2 @@
-<div ng-include="'header/header.tpl'"></div>
+<div ng-include="'header/header.tpl'" include-replace></div>
 <ui-view></ui-view>
