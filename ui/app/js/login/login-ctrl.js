@@ -18,7 +18,7 @@ angular.module( 'login', [] ).config( [ '$stateProvider', '$urlRouterProvider', 
           localStorageService.set( Constants.AUTH_TOKEN_KEY, response.data.token );
           localStorageService.set( 'user', response.data.user );
           console.log("successfully loggedIn");
-          //$state.go( 'home.dashboard' );
+          $state.go( 'home.dashboard' );
         } ).error( function( error ) {
           console.log( "error occured", error.messages[ 0 ] );
           toastr.error( error.messages[ 0 ] ,'ERROR' );

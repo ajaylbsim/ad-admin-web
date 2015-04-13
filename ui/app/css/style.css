@@ -71,7 +71,6 @@
 }
 
 body{
-	width: 100%;
 	font-family: 'Open Sans';	
 	font-size: 11px;
 	background-color: #F0F0F0;
@@ -167,73 +166,81 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 	-webkit-animation: inputHighlighter 0.3s ease;
 	-moz-animation: inputHighlighter 0.3s ease;
 	animation: inputHighlighter 0.3s ease;
-}*/
-/* login button */
+	}*/
+	/* login button */
 
-.btn-primary {
-	padding: 15px;
-	font-size: 18px;
-	width: 100%;
-	border: none;
-	border-radius: 0;
-	background: #2099CE;
-	text-decoration: none;
-	cursor: pointer;
-	color: #fff;
-}
-
-.btn-primary:hover,.btn-primary.focus, .btn-primary:active, .btn-primary.active{
-	color: #fff;
-	background-color: #286090;
-	border-color: #204d74;
-}
-
-@-webkit-keyframes inputHighlighter {
-	from {
-		background: #666666;
+	.btn-primary {
+		padding: 15px;
+		font-size: 18px;
+		width: 100%;
+		border: none;
+		border-radius: 0;
+		background: #2099CE;
+		text-decoration: none;
+		cursor: pointer;
+		color: #fff;
 	}
-	to {
-		width: 0;
-		background: transparent;
-	}
-}
 
-@-moz-keyframes inputHighlighter {
-	from {
-		background: #666666;
+	.btn-primary:hover,.btn-primary.focus, .btn-primary:active, .btn-primary.active{
+		color: #fff;
+		background-color: #286090;
+		border-color: #204d74;
 	}
-	to {
-		width: 0;
-		background: transparent;
-	}
-}
 
-@keyframes inputHighlighter {
-	from {
-		background: #666666;
+	@-webkit-keyframes inputHighlighter {
+		from {
+			background: #666666;
+		}
+		to {
+			width: 0;
+			background: transparent;
+		}
 	}
-	to {
-		width: 0;
-		background: transparent;
+
+	@-moz-keyframes inputHighlighter {
+		from {
+			background: #666666;
+		}
+		to {
+			width: 0;
+			background: transparent;
+		}
 	}
-}
 
-.login-container {
-	background: white;
-	width: 35%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 490px;
-	min-height: 312px;
-}
+	@keyframes inputHighlighter {
+		from {
+			background: #666666;
+		}
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
 
-.logo-top{
-	padding-top: 7%;
-	padding-bottom: 2%;
-}
-.form-signin{
-	max-width: 440px;
-	padding: 0px 0px 0px 0px;
-	margin: 0 auto;
-	padding-top: 1px;
-}
+	.login-container {
+		background: white;
+		width: 35%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 490px;
+		height: 312px;
+		min-height: 360px;
+	}
+
+	.logo-top{
+		padding-top: 7%;
+		padding-bottom: 2%;
+	}
+	.form-signin{
+		max-width: 440px;
+		padding: 0px 0px 0px 0px;
+		margin: 0 auto;
+		padding-top: 1px;
+	}
+	button[disabled]{
+		opacity: 0.6;
+		pointer-events: none;
+	}
+	.bg-warning{
+		color:red !important;
+	}
