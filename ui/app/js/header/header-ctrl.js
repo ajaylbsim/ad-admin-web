@@ -1,4 +1,4 @@
-angular.module( 'header', [] ).controller( 'HeaderCtrl', [ '$scope', '$state', '$rootScope',
-  function( $scope, $state, $rootScope ) {
+angular.module( 'header', [] ).controller( 'HeaderCtrl', [ '$scope', '$state',
+  function( $scope, $state ) {
   }
 ] );

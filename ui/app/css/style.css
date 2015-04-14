@@ -249,50 +249,52 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 	div{
 		display: block;
 	}
-		.header {
-			font-size: 12px;
-			height: 54px;
-			background-color: #FCFCFC;
-			line-height: 0px;
-			margin-bottom: 1px;
-			box-shadow: 8px 3px 2px rgba(211, 210, 210, 0.38);
-			top: 0;
-			border-width: 0 0 1px;
-			position: fixed;
-			right: 0;
-			left: 0;
-			z-index: 5;
+	.header {
+		font-size: 12px;
+		height: 54px;
+		background-color: #FCFCFC;
+		line-height: 0px;
+		margin-bottom: 1px;
+		box-shadow: 8px 3px 2px rgba(211, 210, 210, 0.38);
+		top: 0;
+		border-width: 0 0 1px;
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 5;
+	}
+	.logo {
+		float: left;
+		padding: 0 20px;
+	}
+	nav {
+	}
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 18px;
+		padding-left: 17%;
+		width: 100%;
+	}
+	nav ul li {
+		display: inline;
+		padding: 0 .4em;
+		padding-right: 35px !important;
+		padding-left: 0% !important;
+	}
+	nav ul li a {
+		color: #333;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 15px;
+		padding-bottom: 15px;
+		transition: .5s color;
+	}
+	nav ul li a:hover {
+		border-bottom: 3px solid #333;
+	}
+	@media (min-width: 767px) {
+		.padding-high {
+			padding-top: 50px;
 		}
-		.logo {
-			float: left;
-			padding: 0 20px;
-		}
-		nav {
-		}
-		nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 18px;
-			padding-left: 17%;
-			width: 100%;
-		}
-		nav ul li {
-			display: inline;
-			padding: 0 .4em;
-			padding-right: 35px !important;
-			padding-left: 0% !important;
-		}
-		nav ul li a {
-			color: #333;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 15px;
-			padding-bottom: 15px;
-			transition: .5s color;
-		}
-		nav ul li a:hover {
-			border-bottom: 3px solid #333;
-		}
-		.padding-top{
-			padding-top: 100px !important;
-		}
+	}

@@ -1,2 +1,2 @@
-<div ng-include="'header/header.tpl'" include-replace></div>
-<ui-view class="padding-top"></ui-view>
+<ng-include src="'header/header.tpl'"></ng-include>
+<div ui-view class=" padding-high"></div>
