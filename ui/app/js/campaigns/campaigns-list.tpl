@@ -54,7 +54,6 @@
 	.table tr:nth-child(odd){ background-color:#F0F0F0; }
 	.table tr:nth-child(even)    { background-color:#ffffff; }.table td{
 		vertical-align:middle;
-		border: 1px solid rgba(105, 191, 178, 0.23);
 		border-width:0px 1px 1px 0px;
 		text-align:left;
 		padding:7px;
@@ -69,16 +68,13 @@
 		border-width:0px 0px 0px 0px;
 	}
 	.table tr:first-child td{
-		background:-o-linear-gradient(bottom, #69BFB2 5%, #69BFB2 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #69BFB2), color-stop(1, #69BFB2) );
-		background:-moz-linear-gradient( center top, #69BFB2 5%, #69BFB2 100% );
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#69BFB2", endColorstr="#69BFB2");	background: -o-linear-gradient(top,#69BFB2);
-
-		background-color:#69BFB2;
+		background-color:#fff;
 		border:0px solid #d8d8d8;
+		padding: 14px;
 		text-align:left;
 		border-width:0px 0px 1px 1px;
 		font-size:14px;
-		color:#fff;
+		color:#333;
 	}
 /*	.table tr:first-child:hover td{
 		background:-o-linear-gradient(bottom, #cccccc 5%, #cccccc 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #cccccc) );
