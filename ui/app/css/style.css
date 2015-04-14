@@ -293,7 +293,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 		nav ul li a:hover {
 			border-bottom: 3px solid #333;
 		}
-		#current {
-			color: #dd4c3b !important;
-			border-bottom: 3px solid #dd4c3b !important;
+		.padding-top{
+			padding-top: 100px !important;
 		}
