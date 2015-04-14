@@ -296,5 +296,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 	@media (min-width: 767px) {
 		.padding-high {
 			padding-top: 50px;
+			margin-left: 32px;
+			margin-right: 32px;
 		}
 	}

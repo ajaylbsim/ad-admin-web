@@ -12,6 +12,10 @@ angular.module( 'campaigns', [] ).config( [ '$stateProvider', '$urlRouterProvide
 			url: '/product/123',
 			templateUrl: 'campaigns/campaigns-product.tpl',
 			controller: 'CampaignsProductCtrl'
+		} ).state( 'home.campaigns.new', {
+			url: '/new',
+			templateUrl: 'campaigns/campaigns-new.tpl',
+			controller: 'CampaignsNewProductCtrl'
 		} );
 	}
 	] ).controller( 'CampaignsCtrl', [ '$scope', '$state',
@@ -21,6 +25,9 @@ angular.module( 'campaigns', [] ).config( [ '$stateProvider', '$urlRouterProvide
 	function( $scope, $state) {
 	}
 	] ).controller( 'CampaignsProductCtrl', [ '$scope', '$state',
+	function( $scope, $state) {
+	}
+	] ).controller( 'CampaignsNewProductCtrl', [ '$scope', '$state',
 	function( $scope, $state) {
 	}
 	] );

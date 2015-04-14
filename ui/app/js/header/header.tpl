@@ -1,6 +1,6 @@
 	<header class="header">
 		<div class="logo">
-			<a ui-sref=""> <img src="../img/JumpAhead-Logo.png" alt="logo"> </a>
+			<a > <img src="../img/JumpAhead-Logo.png" alt="logo"> </a>
 		</div>
 		<nav>
 			<ul>
